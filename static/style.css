@@ -78,6 +78,8 @@ table * {
 }
 .rooms-container{
 display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
 }
 .rooms form * {
   text-align: left;
