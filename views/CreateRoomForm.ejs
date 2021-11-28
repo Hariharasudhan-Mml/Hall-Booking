@@ -1,0 +1,27 @@
+<%-include('../initials/header')  %>
+<div class="room-create">
+<form action="/createRoom" method="post">
+
+  <div class="line">  <label for="room_id" >Room Id</label><input type="number" name="room_id" required/></div><br/>
+  <div class="line">  <label for="room_name">Room Name</label><input type="text" name="room_name" required/></div><br/>
+  <div class="line">  <label for="no_of_seats">Number of Seats</label><input type="number" name="no_of_seats" required/></div><br/>
+  <div class="line">  <label for="amenities" >Amenities</label><div class="option-grp">
+    <p  class="option"><span>Ac</span><input type="checkbox" name="amenities"  value="Ac" /></p>
+    <p class="option"><span>Gym</span><input type="checkbox" name="amenities"  value="Gym"/></p>
+    <p class="option"><span>Spa</span><input type="checkbox" name="amenities"  value="Spa"/></p>
+    <p class="option"><span>CC Tv</span><input type="checkbox" name="amenities"  value="CC Tv Surveillance"/></p>
+    <p class="option"><span>Poolside Bar</span><input type="checkbox" name="amenities"  value="Poolside Bar"/></p>
+   <p class="option"> <span>Swimming Pool</span><input type="checkbox" name="amenities"  value="Swimming Pool"/></p>
+    <p class="option"><span>Car Parking</span><input type="checkbox" name="amenities"  value="Car Parking"/></p>
+    <p class="option"><span>Outdoor Restaurant</span><input type="checkbox" name="amenities"  value="Outdoor Restaurant"/></p>
+</div></div>
+    <br/>
+<div class="line"><label for="price">Price for an Hour(INR)</label><input type="number" name="price" required/></div><br/>
+<input type="submit" value="Create Room"  class="btn"/>
+
+</form>
+</div>
+<a href="/" class="back-btn">Back to Home </a>
+<%-include('../initials/footer')  %>
+
+

@@ -1,0 +1,23 @@
+<%-include('../initials/header')%>
+<div class="rooms-container">
+<% rooms.forEach(room=>{ %>
+    <div class="rooms">
+<form action="/createcustomer" method="get">
+    <p><span class="lable" >Room Name : </span><%=room.room_name %></p>
+    <p> <span class="lable"> Room Id : </span><%=room.room_id %></p>
+    <p><span class="lable">Seats : </span><%=room.no_of_seats %></p>
+    <p><span class="lable">Amenities :</span></p>
+    <%room.amenities.forEach(item=>{ %>
+        <span class="amenities"><%=item%></span>
+            <% })%>
+            <p><span class="lable">Price for an hour :</span>Rs.<%=room.price%></p>
+     <input type="text" name="id" hidden value="<%=room.room_id %>"/>
+    <input type="submit" value="Book" class="book-btn"/>
+</form>
+</div>
+<% })%>
+</div>
+<a href="/" class="back-btn">Back to Home </a>
+
+
+<%-include('../initials/footer')%>

@@ -1,0 +1,28 @@
+<%- include('../initials/header') %>
+<h2 class="title">Customers List</h2>
+
+<table border="1">
+  <tr>
+    <th>Customer Name</th>
+    <th>Booked Room Name</th>
+
+    <th>Date</th>
+    <th>Start time</th>
+    <th>End time</th>
+  </tr>
+ <% customer.forEach(data=>{ %>
+    <tr>
+      <td><%=data.customer.customer_name%></td>
+      <td><%=data.rooms.room_name %></td>
+      <td><%=data.date %></td>
+      <td> <%=data.start_time%></td>
+      <td><%=data.end_time%></td>
+    </tr>
+<%})%>
+
+
+
+</table>
+<a href="/" class="back-btn">Back to Home </a>
+
+<%- include('../initials/footer') %>

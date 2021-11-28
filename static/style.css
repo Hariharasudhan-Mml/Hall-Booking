@@ -1,0 +1,159 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: linear-gradient(to right, rgb(93, 93, 209), grey);
+  
+}
+.home {
+  text-align: center;
+}
+.back-btn,  a {
+  color: rgb(252, 229, 98);
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid yellow;
+}
+ .back-btn:hover ,a:hover {
+  background-color: rgb(226, 226, 76);
+  color:red
+}
+label {
+  display: inline-block;
+  width: 200px;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+}
+.option-grp {
+  display: inline-grid;
+}
+.option {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(rgb(133, 172, 133), orange);
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40%;
+  margin: 10px;
+}
+form {
+  text-align: center;
+}
+
+.room-create{
+  margin-top: 100px
+}
+.room-create input{
+  padding: 10px;
+}
+.btn {
+  color: white;
+  background-color: rgb(119, 119, 182);
+  padding: 10px !important;
+  border-radius: 5px;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: rgb(71, 71, 150);
+}
+.title {
+  text-align: center;
+  color: rgb(238, 235, 234);
+  text-shadow: black 1px 1px 5px;
+  margin: 20px;
+}
+table {
+  border: 2px solid yellowgreen;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+table * {
+  padding: 10px;
+}
+.rooms-container{
+display: flex;
+}
+.rooms form * {
+  text-align: left;
+}
+.rooms {
+  width: 300px;
+  flex-direction:row ;
+  margin: 20px;
+  
+  padding: 10px;
+  font-size: 19px;
+  border: 1px solid yellow;
+  background: rgb(224, 231, 224);
+  border-radius: 5px;
+}
+
+.amenities {
+  display:inline-block;
+  width: fit-content;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: darkseagreen;
+  padding: 3px;
+  margin: 5px;
+}
+
+.book-btn{
+  text-align:center !important; 
+display: inline-block;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+ 
+  }
+  .book-btn:hover{
+    background-color: black;
+    color: white;
+cursor: pointer;
+}
+
+.lable{
+  font-weight: bolder;
+  color: rgb(65, 63, 63);
+  display: inline-block;
+  width: 60%;
+  font-family: Haettenschweiler, sans-serif;
+}
+.rooms p{
+  margin: 10px;
+ color: mediumblue;
+ font-family: cursive;
+}
+.customerForm{
+margin-top:100px ;
+}
+
+.customerForm > form * {
+margin: 10px;
+padding: 5px;
+}
+.customerForm > form > label{
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+ font-family: Haettenschweiler, sans-serif;
+}
+
+.submit-btn{
+  display: inline-block;
+  padding: 5px 15px !important;
+}
+.success , .failed{
+text-align: center;
+font-size:xx-large;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+margin: 50px;
+color:greenyellow;
+text-shadow: indigo 2px 5px 5px;
+}

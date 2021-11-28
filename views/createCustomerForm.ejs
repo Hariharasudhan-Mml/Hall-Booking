@@ -1,0 +1,19 @@
+<%- include('../initials/header') %>
+<div class="customerForm">
+<form action='/createcustomer' method="post">
+    <label for="customer_name">Customer Name</label><input type="text"  name="customer_name" required/><br/>
+    <label for="address">Address</label><input type="text"  name="address" required/><br/>
+    <label for="date">Date</label><input type="date" name="date" value="<%=date%>" required /><br/>
+    <label for="start_time">Start Time</label><input type="datetime" name="start_time" value="<%=time%>" required/><br/>
+    <label for="end_time">End Time</label><input type="datetime"  name="end_time" required/><br/>
+    <label for="room_id" >Room Id</label><input type="number" value="<%=id%>" name="room_id" required/><br/>
+<input type="submit" value="Submit"  class="btn"/>
+    
+</form>
+</div>
+
+<a href="/" class="back-btn">Back to Home </a>
+
+
+
+<%- include('../initials/footer') %>

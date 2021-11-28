@@ -1,0 +1,25 @@
+<%- include('../initials/header') %>
+<h2 class="title">Booked Rooms</h2>
+<table border="1">
+    <tr>
+        <th>Room Name</th>
+        <th>Customer Name</th>
+        <th>Room Status</th>
+        <th>Date</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+    </tr>
+<% rooms.forEach(room=>{ %>
+    <tr>
+        <td><%=room.rooms.room_name%></td>
+        <td><%=room.customer.customer_name%></td>
+        <td><%=room.rooms.booked_status?"Booked":"Not Booked"%></td>
+        <td><%=room.date%></td>
+        <td> <%=room.start_time%></td>
+        <td><%=room.end_time%></td>
+    </tr>
+<%})%>
+</table>
+<a href="/" class="back-btn">Back to Home </a>
+
+<%- include('../initials/footer') %>
